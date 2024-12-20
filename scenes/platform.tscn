@@ -3,17 +3,20 @@
 [ext_resource type="Script" path="res://scripts/platform.gd" id="1_h4iop"]
 [ext_resource type="Texture2D" uid="uid://cfmij0ntcwd0e" path="res://assets/sprites.png" id="1_vvc1d"]
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_tc1p0"]
-size = Vector2(230, 36)
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_jac1q"]
+size = Vector2(230.44, 33.3061)
 
 [node name="platform" type="RigidBody2D"]
 freeze = true
 freeze_mode = 1
 script = ExtResource("1_h4iop")
 SPEED = 500.0
+metadata/_edit_group_ = true
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-shape = SubResource("RectangleShape2D_tc1p0")
+[node name="CollisionPolygon2D" type="CollisionShape2D" parent="."]
+position = Vector2(0, -1.90735e-06)
+scale = Vector2(0.998089, 1.02083)
+shape = SubResource("RectangleShape2D_jac1q")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
 scale = Vector2(0.278788, 0.206061)

@@ -1,7 +1,8 @@
-[gd_scene load_steps=4 format=3 uid="uid://cp8ook1x04nek"]
+[gd_scene load_steps=5 format=3 uid="uid://cp8ook1x04nek"]
 
 [ext_resource type="PackedScene" uid="uid://dswjg7m866uy" path="res://scenes/platform.tscn" id="1_j7ghw"]
 [ext_resource type="PackedScene" uid="uid://mjb0vwam7or5" path="res://scenes/ball.tscn" id="2_yu2ug"]
+[ext_resource type="PackedScene" uid="uid://bkonwa3d78iaw" path="res://scenes/tile.tscn" id="3_f62o0"]
 
 [sub_resource type="WorldBoundaryShape2D" id="WorldBoundaryShape2D_ua55p"]
 
@@ -30,3 +31,15 @@ shape = SubResource("WorldBoundaryShape2D_ua55p")
 position = Vector2(-4, -325)
 rotation = 3.14159
 shape = SubResource("WorldBoundaryShape2D_ua55p")
+
+[node name="tile" parent="." instance=ExtResource("3_f62o0")]
+position = Vector2(-511, -299)
+
+[node name="tile2" parent="." instance=ExtResource("3_f62o0")]
+position = Vector2(-392, -299)
+
+[node name="tile3" parent="." instance=ExtResource("3_f62o0")]
+position = Vector2(-274, -299)
+
+[node name="tile4" parent="." instance=ExtResource("3_f62o0")]
+position = Vector2(-155, -299)
